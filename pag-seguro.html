@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros</title>
+    <link rel="stylesheet" href="pag.css">
+</head>
+<body>
+     <header>
+
+        <section>
+
+            <a href="index.html" class="logo"><img src="imagens/carro.png" width="150"> </a>
+
+            <nav class="navbar">
+                <a href="index.html">Pagina inicial</a>
+                <a href="index.html" id="menu">Carros</a>
+                <a href="#oferta">Ofertas</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contatos">Contatos</a>
+                <a href="pag-seguro.html">Seguros</a>
+            </nav>
+
+            <div class="icons">
+                <a href=""><img width="30" height="30" src="https://img.icons8.com/office/30/search--v1.png" alt="search--v1" /></a>
+            </div>
+        </section>
+    </header>
+
+    <section class="carousel-container" id="seguros">
+         <h2 class="title">Escolha o tipo<span> de seguro</span></h2>
+    <div class="carousel">
+        <button class="carousel-btn left" onclick="moveCarousel(-1)">&#10094;</button>
+        
+        <div class="carousel-items">
+            <div class="carousel-item" onclick="selectSeguro('Seguro Auto')">
+                <a href=""><img src="imgCarrossel/2016-05-03-seguro-credito-jirsak.webp" alt="Seguro Auto"></a>
+                <p>Seguro Auto</p>
+            </div>
+            <div class="carousel-item" onclick="selectSeguro('Seguro Vida')">
+                <a href=""><img src="imgCarrossel/istockphoto-1290693328-612x612.jpg" alt="Seguro Vida"></a>
+                <p>Seguro Vida</p>
+            </div>
+            <div class="carousel-item" onclick="selectSeguro('Seguro Residencial')">
+                <a href=""><img src="imgCarrossel/Seguro residencial.jpg" alt="Seguro Residencial"></a>
+                <p>Seguro Residencial</p>
+            </div>
+            <div class="carousel-item" onclick="selectSeguro('Seguro Viagem')">
+                <a href=""><img src="imgCarrossel/Viaje com segurança.jpg" alt="Seguro Viagem"></a>
+                <p>Seguro Viagem</p>
+            </div>
+            <!-- Adicione mais seguros conforme necessário -->
+        </div>
+
+        <button class="carousel-btn right" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+<footer>
+        <div class="rodape">&copy; SpaceSeguro</div>
+    </footer>
+
+<script>
+let currentIndex = 0;
+
+function moveCarousel(direction) {
+    const container = document.querySelector('.carousel-items');
+    const item = document.querySelector('.carousel-item');
+    const itemWidth = item.offsetWidth + 20; // 20 = margem horizontal total (10px de cada lado)
+
+    const totalItems = document.querySelectorAll('.carousel-item').length;
+    const visibleArea = document.querySelector('.carousel').offsetWidth;
+    const visibleCount = Math.floor(visibleArea / itemWidth);
+
+    currentIndex += direction;
+
+    // limitar
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > totalItems - visibleCount) {
+        currentIndex = totalItems - visibleCount;
+    }
+
+    const offset = -(currentIndex * itemWidth);
+    container.style.transform = `translateX(${offset}px)`;
+}
+</script>
+
+</body>
+</html>

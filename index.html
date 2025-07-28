@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <section>
+
+            <a href="index.html" class="logo"><img src="imagens/carro.png" width="150"> </a>
+
+            <nav class="navbar">
+                <a href="#pagina">Pagina inicial</a>
+                <a href="#menu">Carros</a>
+                <a href="#oferta">Ofertas</a>
+                <a href="#sobre">Sobre nós</a>
+                <a href="#contatos">Contatos</a>
+                <a href="pag-seguro.html">Seguros</a>
+            </nav>
+
+            <div class="icons">
+                <a href=""><img width="30" height="30" src="https://img.icons8.com/office/30/search--v1.png"alt="search--v1" /></a>
+
+                <a href="Login/login.html"><img src="imagens/do-utilizador(2).png" alt="cadastro"></a>
+            </div>
+        </section>
+    </header>
+
+    
+
+    <div id="conteudo-completo">
+        <section class="carrossel" id="pagina">
+        <div class="container-slider">
+            <button id="prev-button">
+                <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Anterior">
+            </button>
+
+            <div class="container-imagens">
+                <img src="imgCarrossel/1.jpg" class="slider on" alt="Slide 1">
+                <img src="imgCarrossel/2.jpg" class="slider" alt="Slide 2">
+                <img src="imgCarrossel/3.jpg" class="slider" alt="Slide 3">
+            </div>
+
+            <button id="next-button">
+                <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Próximo">
+            </button>
+        </div>
+    </section>
+
+     <section class="menu" id="menu">
+        <h2 class="title">Nosso <span>Menu</span></h2>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="imagens/opala.jpg" alt="">
+                <h3>Opala 1971</h3>
+                <div class="price">R$ 15000,00 <span>20000,00</span></div>
+                <a href="#" class="btn" data-content-id="carOne">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/hondacivi2019.jpg" alt="">
+                <h3>Honda civic 2019</h3>
+                <div class="price">R$ 1400,00 <span>1800,99</span></div>
+                <a href="#" class="btn" data-content-id="carTwo">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/corsa.jpeg" alt="">
+                <h3>Chevrolet Corsa 2005</h3>
+                <div class="price">R$ 1000,00 <span>1500,00</span></div>
+                <a href="#" class="btn" data-content-id="carThree">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/doger.jpeg" alt="">
+                <h3>Dodger challenger 2009</h3>
+                <div class="price">R$ 3000,00</div>
+                <a href="#" class="btn" data-content-id="carFour">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/fusca.jpg" alt="">
+                <h3>Fusca 1969</h3>
+                <div class="price">R$ 15000,00 <span>20000,00</span></div>
+                <a href="#" class="btn" data-content-id="carFive">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/hodnaci.jpg" alt="">
+                <h3>Honda civic 2008</h3>
+                <div class="price">R$ 1500000,00 </div>
+                <a href="#" class="btn" data-content-id="carSix">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/hondafit.jpg" alt="">
+                <h3>Honda fit 2015</h3>
+                <div class="price">R$ 1500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carSeven">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/toyota-hilux-restyling-2019.webp" alt="">
+                <h3>Hilux 2020</h3>
+                <div class="price">R$ 2500000,00 </div>
+                <a href="#" class="btn" data-content-id="carEight">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/320iGP.jpg" alt="">
+                <h3>320i GP 2025</h3>
+                <div class="price">R$ 5500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carNine">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/ram.jpg" alt="">
+                <h3>RAM 1500 2024</h3>
+                <div class="price">R$ 70000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carTen">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/voiage.jpeg" alt="">
+                <h3>Voiage 2010</h3>
+                <div class="price">R$ 60000,00</div>
+                <a href="#" class="btn" data-content-id="carEleven">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/fiat scudo.webp" alt="">
+                <h3>fiat scudo 2024</h3>
+                <div class="price">R$ 1500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carTwelven">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/chevette80_01.jpg" alt="">
+                <h3>chevette 1980</h3>
+                <div class="price">R$ 1500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carThirteen">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/hodnaci.jpg" alt="">
+                <h3>Honda civic 2008</h3>
+                <div class="price">R$ 1500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carFourten">Adicione ao Carrinho</a>
+            </div>
+            <div class="box">
+                <img src="imagens/hodnaci.jpg" alt="">
+                <h3>Honda civic 2008</h3>
+                <div class="price">R$ 1500000,00 <span>2000000,00</span></div>
+                <a href="#" class="btn" data-content-id="carSixten">Adicione ao Carrinho</a>
+            </div>
+        </div>
+    </section>
+
+     <section class="address" id="address">
+        <h2 class="title">Nossos<span> endereços</span></h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29262.64189738874!2d-46.614405512809775!3d-23.538607516352876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec2e03fe51b%3A0xa9d206356d795121!2sUnidas%20Aluguel%20de%20Carros!5e0!3m2!1spt-BR!2sbr!4v1748444528291!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <div class="contatos" id="contatos">
+            <a href="https://github.com/Petrus2100"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github" targer="_blank"/></a>
+            <a href="https://www.linkedin.com/in/arthur-marques-256a9a27a/"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin" target="_blank"/></a>
+        </div>
+    </section>
+    </div>
+
+
+   
+
+    <div class="tab-content">
+        <div class="content" id="carOne">
+            <img src="imagens/opala.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Opala 1971</h1>
+
+             <p>Opala 1971 um clássico dos carros brasileiros, para você que é amante de carros com ronco potente, esse carro será um grande confoto.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carTwo">
+            <img src="imagens/hondacivi2019.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Honda civic 2019</h1>
+
+             <p>Um modelo extremamente bonito inclusive um dos melhores e mais alugados.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carThree">
+            <img src="imagens/corsa.jpeg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Chevrolet Corsa 2005</h1>
+
+             <p>Também um dos mais alugados, a maioria que aluga pensa em comprar por ser economico. Um ótimo veículo para quem está em duvida e quer economizar na compra e no combustivel.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carFour">
+            <img src="imagens/doger.jpeg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Dodger challenger 2009</h1>
+
+             <p>Para você que gosta de carros velozes já deve ter visto esse em filmes e séries, isso mesmo, o dodger challenger 2009.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carFive">
+            <img src="imagens/fusca.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Fusca 1969</h1>
+
+             <p>Esse veículo está enraizado na cultura brasileira, virou um simbolo para nós, um dos carros maisc consumidos na época de lançamento, com certeza vale a pena alugar.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carSix">
+            <img src="imagens/hodnaci.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Honda civic 2008</h1>
+
+             <p>É um bom carro confia meu querido cliente. Tô falando sério.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carSeven">
+            <img src="imagens/hondafit.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Honda fit 2015</h1>
+
+             <p>Um ótimo carro para viagens, recomendo por experiencia própria.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carEight">
+            <img src="imagens/toyota-hilux-restyling-2019.webp" class="content-img" alt="">
+           <div class="infos">
+            <h1>Hilux 2020</h1>
+
+             <p>Um ótimo carro para escutar musica setanja e ser agricultor.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carNine">
+            <img src="imagens/320iGP.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>320i GP 2025</h1>
+
+             <p>Módinha, más eu teria</p>
+           </div>
+        </div>
+
+        <div class="content" id="carTen">
+            <img src="imagens/ram.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>RAM 1500 2024</h1>
+
+             <p>Um carro que nos Estados Unidos é sucata e aqui no Brasil é algo de luxo, vai entender meu povo.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carEleven">
+            <img src="imagens/voiage.jpeg" class="content-img" alt="">
+           <div class="infos">
+            <h1>Voiage 2010</h1>
+
+             <p>Alugue, vale a pena. Tá um ótimo preço.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carTwelven">
+            <img src="imagens/fiat scudo.webp" class="content-img" alt="">
+           <div class="infos">
+            <h1>fiat scudo 2024</h1>
+
+             <p>Uma van, você pode alugar uma van.</p>
+           </div>
+        </div>
+
+        <div class="content" id="carThirteen">
+            <img src="imagens/chevette80_01.jpg" class="content-img" alt="">
+           <div class="infos">
+            <h1>chevette 1980</h1>
+
+             <p>Clássico dos anos 80, esse carro tem um grande valor.</p>
+           </div>
+        </div>
+        
+
+    </div>
+
+
+    <footer>
+        <div class="rodape">&copy; SpaceSeguro</div>
+    </footer>
+
+</body>
+
+</html>
